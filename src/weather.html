@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather</title>
+</head> 
+<body>
+    <div class="app-main">
+        <div class="searchInputBox">
+          <select id="input-box" class="input-box">
+            <option>Select a city</option>
+            <option>Hanoi</option>
+            <option>Da Nang</option>
+            <option>An Giang</option>
+            <option>Hội An, Quảng Nam</option>
+            <option>Khánh Hòa</option>
+            <option>Hà Nam</option>
+            <option>Ninh Bình</option>
+            <option>Nha Trang, Khánh Hòa</option>
+            <option>Huế, Thua Thien Hu</option>
+            <option>Sa Pa, Lao Cai</option>
+          </select>
+        </div>
+    
+        <!--Display-->
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="date" id="date"></div>
+            </div>
+            <div class="weather-status">
+                <div class="temp" id="temp"></div>
+                <div class="min-max" id="min-max"></div>
+                <br>
+                <div class="humidity" id="humidity"></div>
+                <div class="precipitation" id="precipitation"></div>
+                <div class="wind" id="wind-speed"></div>
+                <div class="weather" id="weather"></div>
+                <div id="img"></div>
+            </div>
+        </div>
+      </div>
+    <script src="weather.js"></script>
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="file:///Users/admin/Documents/Computer%20Science/Semester%204/JAVASCRIPT%20OOP/electron-app/BCS2111-060/src/index.html">Back</a></li>
+        </ul>
+    </div>
+</body>
+</html>

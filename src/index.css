@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(196, 201, 209, 0.936);
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #94bae5, #a8b1d7, #b8ddff, #bcddd5);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* CSS for header */
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+.ml3 h1{
+  font-weight: 900;
+  font-size: 3.5em;
+}
+p{
+  color: white
+}
+.header .logo {
+  width: 75px;
+  height: 56px;
+  border-radius: 60%;
+  overflow: hidden;
+  margin-top: -6px;
+  margin-left: 15px;
+}
+.header .logo2 {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: white;
+  text-decoration: none;
+  margin-left: 225px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  padding: 35px 20px;
+}
+/* CSS for main section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://cdn.leadingcourses.com/userfiles/regions/background/thumbs/1920x1200/filters:format(webp)/1326.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 35px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 20px;
+  color: #585858;
+  margin: 10px 0;
+}
+/* CSS for footer */
+.footer {
+  width: 88.8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 40px 80px;
+}
+.footer .copy {
+  color: #fff;
+}
+/*------box------*/
+
+.quotes {
+  width: 80vw;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.quotes .box {
+  position: relative;
+  width: 25vw;
+  height: 50vh;
+  min-height: 320px;
+  background-color: rgba(196, 201, 209, 0.936);
+  background: linear-gradient(-45deg, #94bae5, #a8b1d7, #a5d3ff, #bcddd5);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.quotes .box::before {
+  content: '\201C';
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  opacity: 0.2;
+  background: transparent;
+  pointer-events: none;
+}
+
+.quotes .box::after {
+  content: '\201D';
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  font-size: 120px;
+  opacity: 0.2;
+  background: transparent;
+  filter: invert(1);
+  pointer-events: none;
+}
+.quotes .box p {
+  color: #333333;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.quotes .box:hover {
+  background: linear-gradient(-45deg, #94bae5, #a8b1d7, #a5d3ff, #bcddd5);
+  animation: gradient 8s ease infinite;
+  transition: all 0.5s ease-in;
+}
+
+.quotes .box.box1:hover,
+.quotes .box.box1:hover~.bg {
+  opacity: 1;
+  background: white;
+}
+
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.bg {
+  opacity: 1;
+  background: white;
+}
+
+.quotes .box.box3:hover,
+.quotes .box.box3:hover~.bg {
+  opacity: 1;
+  background: white;
+}
+
+.quotes .box.box4:hover,
+.quotes .box.box4:hover~.bg {
+  opacity: 1;
+  background: white;
+}
+
+.quotes .box.box5:hover,
+.quotes .box.box5:hover~.bg {
+  opacity: 1;
+  background: white;
+}
+
+.quotes .box.box6:hover,
+.quotes .box.box6:hover~.bg {
+  opacity: 1;
+  background: white;
+}
+
+/*--Image in boxes--*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.quotes .box.box1 {
+  background: url('https://vietnamnomad.com/wp-content/uploads/2020/04/Best-places-to-visit-in-Vietnam-in-2021-Ha-Long-Bay.jpg') no-repeat center center/cover;
+}
+
+.quotes .box.box2 {
+  background: url('https://vietnamnomad.com/wp-content/uploads/2020/04/Best-places-to-visit-in-Vietnam-in-2021-Ninh-Binh.jpg') no-repeat center center/cover;
+}
+
+.quotes .box.box3 {
+  background: url('https://vietnamnomad.com/wp-content/uploads/2020/04/Best-places-to-visit-in-Vietnam-in-2021-Da-Nang.jpg') no-repeat center center/cover;
+}
+.quotes .box.box4 {
+  background: url('https://vietnamnomad.com/wp-content/uploads/2020/04/Best-places-to-visit-in-Vietnam-in-2021-Hue.jpg') no-repeat center center/cover;
+}
+
+.quotes .box.box5 {
+  background: url('https://vietnamnomad.com/wp-content/uploads/2020/04/Best-places-to-visit-in-Vietnam-in-2021-Sapa.jpg') no-repeat center center/cover;
+}
+
+.quotes .box.box6 {
+  background: url('https://vietnamnomad.com/wp-content/uploads/2020/04/Best-places-to-visit-in-Vietnam-in-2021-Nha-Trang.jpg') no-repeat center center/cover;
+}
+
+.quotes .box.box4 img {
+  max-width: 100%;
+  height: auto;
+}
+.quotes .box.box1 img {
+  max-width: 100%;
+  height: auto;
+}
+.quotes .box.box2 img {
+  max-width: 100%;
+  height: auto;
+}
+.quotes .box.box3 img {
+  max-width: 100%;
+  height: auto;
+}
+.quotes .box.box5 img {
+  max-width: 100%;
+  height: auto;
+}
+.quotes .box.box6 img {
+  max-width: 100%;
+  height: auto;
+}
+/*--hover---*/
+.container {
+  display: flex;
+  width: 100%;
+  padding: 7% 1%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
+
+
+
